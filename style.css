@@ -1,0 +1,1034 @@
+/* Reset & Base */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 10px 0 0;
+  background: #000000;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gold {
+  color: #ffd700;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 60px 0 60px;
+  background: rgba(0, 0, 0, 0.88);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffd700;
+  
+}
+
+.main-header nav ul {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-header nav a:hover {
+  color: #ffd700;
+}
+
+/* CRYPITO logo in header */
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  text-decoration: none;
+}
+
+/* CRYPITO logo in header (bold Inter, no underline) */
+.logo-bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  overflow: hidden;
+}
+
+.hex-bg {
+  position: absolute;
+  inset: 0;
+  background: url('pattern.jpg');
+  opacity: 0.25;
+  z-index: 1;
+  background-size: 1400px 800px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content-no-margin {
+  margin-top: 0;
+}
+
+.hero-label {
+  color: #ffd700;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.hero-label-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* Hero main heading */
+.hero-title-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.7rem;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin: 18px 0 10px 0;
+  line-height: 1.2;
+}
+
+.hero h1 .gold {
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Hero paragraph */
+.hero-desc-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.scroll-down {
+  display: inline-block;
+  font-size: 2rem;
+  color: #ffd700;
+  margin-top: 30px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(10px);}
+}
+
+/* --- Benefits (Features) Section --- */
+.features {
+  background: #000000;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+.features-bg {
+  position: absolute;
+  inset: 0;
+  background: url('crypto.png');
+  opacity: 0.25;
+  z-index: 1;
+  background-size: 1400px 800px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.features-bg2 {
+  position: absolute;
+  inset: 0;
+  background: url('pattern.jpg');
+  opacity: 0.25;
+  z-index: 1;
+  background-size: 1400px 800px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.features-bg3 {
+  position: absolute;
+  inset: 0;
+  background: url('crypto.png');
+  opacity: 0.25;
+  z-index: 1;
+  background-size: 1400px 800px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+
+.features-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 24px 60px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.features-content > div {
+  background: rgba(24,24,24,0.96);
+  border-radius: 18px;
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.10);
+  padding: 32px 28px 26px 28px;
+  margin: 0 auto;
+  transition: box-shadow 0.2s;
+}
+
+.features-content > div:hover {
+  box-shadow: 0 4px 32px 0 rgba(255,215,0,0.08);
+}
+
+.features-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #ffd700;
+  font-size: 1.45rem;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Features label */
+.features-label-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* Features heading */
+.features-title-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Features paragraph */
+.features-desc-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #ccc;
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+}
+
+.features-content p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #ccc;
+  font-size: 1.07rem;
+  line-height: 1.7;
+  margin: 0;
+  text-align: center;
+}
+
+/* Get Started button */
+.home-get-started-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* --- Home Features Section Custom Styles (from inline HTML) --- */
+.features-content.home-features-content {
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.features-title-main {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.features-title-span {
+  display: block;
+}
+
+.features-desc-main {
+  font-size: 1.18rem;
+  color: #ccc;
+  margin-bottom: 28px;
+}
+
+.btn.gold-btn.home-get-started-btn {
+  background: linear-gradient(90deg,#ffd700 0%,#bfa100 100%);
+  color: #181818;
+  padding: 14px 38px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 12px 0 rgba(255,215,0,0.10);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 0 0 0;
+  font-size: 1rem;
+  
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-columns div {
+  min-width: 180px;
+}
+
+.footer-columns h4 {
+  color: #ffd700;
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 8px;
+  color: #ccc;
+  font-size: 0.97rem;
+}
+
+.footer-columns a {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.footer-columns a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  padding: 18px 0 10px 0;
+  border-top: 1px solid #222;
+  margin-top: 10px;
+}
+
+/* --- Inter Font Family --- */
+
+/* --- Learn Page Styles --- */
+.learn-hero {
+  position: relative;
+  height: 750px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.learn-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 700px;
+}
+
+.learn-icon {
+  margin: 0 auto 18px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Learn Icon Margin */
+.learn-icon-mb {
+  margin-bottom: 18px;
+}
+
+.learn-hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Learn Hero Title */
+.learn-hero-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.7rem;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.learn-desc {
+  font-size: 1.15rem;
+  color: #ccc;
+  font-weight: 400;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Learn Main Description */
+.learn-desc-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.learn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181818;
+  border-radius: 24px;
+  padding: 10px 60px;
+  font-size: 1.1rem;
+  color: #ffd700;
+  font-weight: 500;
+  margin: 0 auto 24px auto;
+  width: fit-content;
+  gap: 10px;
+  border: 1.5px solid #ffd700;
+}
+
+/* Learn Search Margin */
+.learn-search-mb {
+  margin-bottom: 24px;
+}
+
+.learn-search .search-icon {
+  font-size: 1.2rem;
+}
+
+/* Learn Search Icon */
+.learn-search-icon {
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+.learn-search-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #ffd700;
+}
+
+.learn-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+/* Learn Buttons Alignment */
+.learn-buttons-left {
+  margin-bottom: 0;
+  justify-content: center; /* Center the buttons */
+  text-align: center;
+}
+
+.learn-btn {
+  padding: 10px 30px;
+  border: 1.5px solid #fff;
+  border-radius: 24px;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.learn-btn:hover, .learn-btn.active {
+  background: #ffd700;
+  color: #181818;
+  border: 1.5px solid #ffd700;
+}
+
+/* --- Learn Section (FAQ, Guides, Tips) --- */
+.learn-section {
+  background: #181818;
+  padding: 48px 0 0 0;
+}
+
+/* Learn Section Custom BG & Padding */
+.learn-section-custom {
+  background: #111;
+  padding-top: 48px;
+}
+
+.learn-section-center {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Learn Section Center Text Left */
+.learn-section-center-left {
+  text-align: left;
+}
+
+.learn-section-block {
+  background: #181818;
+  border-radius: 18px;
+  margin: 0 auto 80px auto;
+  padding: 48px 32px 32px 32px;
+  max-width: 700px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.learn-section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* space between title and icon */
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.learn-section-header-title-left {
+  text-align: left;
+  flex: 1;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.learn-header-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-left: 12px;
+  display: block;
+}
+
+.learn-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.learn-arrow {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+  margin: 0 32px;
+}
+
+.learn-arrow-disabled {
+  color: #444 !important;
+  cursor: not-allowed !important;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.learn-faq-list {
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  padding: 0 16px;
+}
+
+.faq-item {
+  margin-bottom: 22px;
+}
+
+.faq-item strong {
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: #fff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.faq-item p {
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* --- User Icon (Header) --- */
+.user-icon {
+  width: 35px;
+  height: 35px;
+  background: url('person.png') center/100% no-repeat;
+  margin-left: 18px;
+  display: inline-block;
+}
+
+/* --- Active Nav Link --- */
+.main-header nav a.active {
+  color: #ffd700;
+  font-weight: 700;
+}
+
+/* --- Crypto Page Hero --- */
+.crypto-hero {
+  min-height: 340px;
+  height: 750px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.crypto-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.crypto-hero .hero-label {
+  color: #ffd700;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.crypto-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 18px 0 10px 0;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.crypto-hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+/* --- Full-height hero for login/register */
+.hero-full {
+  height: 100vh;
+  min-height: 600px;
+}
+
+/* --- Crypto Table Section --- */
+.crypto-table-section {
+  background: #181818;
+  padding: 0 0 40px 0;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crypto-table-container {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 0 0 0;
+}
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+  margin-bottom: 24px;
+}
+.crypto-table th, .crypto-table td {
+  padding: 18px 12px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+}
+.crypto-table th {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-bottom: 2px solid #222;
+  background: transparent;
+}
+.crypto-table tr:not(:last-child) td {
+  border-bottom: 1px solid #222;
+}
+.coin-name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.coin-symbol {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #bbb;
+  margin-left: 6px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+}
+.coin-price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.coin-change {
+  font-weight: 500;
+  color: #ff4d4f;
+  font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
+}
+.coin-cap {
+  font-weight: 400;
+  color: #ccc;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Show more/less button */
+.show-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 28px;
+  border: 2px solid #fff;
+  border-radius: 22px;
+  background: transparent;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.show-btn:hover {
+  background: #ffd700;
+  color: #181818;
+  border: 2px solid #ffd700;
+}
+
+/* --- Register Page Card --- */
+.register-title-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding : 0 100px;
+}
+
+.register-card {
+  background: #000;
+  border-radius: 22px;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.28);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 38px 58px 22px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.register-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="password"],
+.register-card input[type="tel"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #181818;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  outline: none;
+  border: 1.5px solid #222;
+  transition: border 0.2s;
+}
+
+.register-card input:focus {
+  border: 1.5px solid #ff5e00;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 10px;
+  border: none;
+  border-radius: 22px;
+  background: linear-gradient(90deg, #ffd700 0%, #bfa100 100%);
+  color: #181818;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.register-btn:hover {
+  background: #fffbe6;
+  color: #bfa100;
+}
+
+.register-footer {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.97rem;
+  color: #ccc;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.register-login-link {
+  color: #ffd700;
+  font-weight: 600;
+  margin-left: 4px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.register-login-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Back Arrow */
+.back-arrow {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  font-size: 2.1rem;
+  color: #ffd700;
+  text-decoration: none;
+  z-index: 10;
+  font-weight: 700;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.back-arrow:hover {
+  color: #fff;
+}
+
+/* --- Benefits Page Custom Styles --- */
+.hero-benefits {
+  height: 750px;
+  min-height: unset;
+  background: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-benefits .hero-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.hero-benefits h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+
+.hero-benefits-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.features-benefits {
+  background: #181818;
+}
+
+.features-benefits-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.benefit-block {
+  margin-bottom: 36px;
+}
+
+.benefit-block:last-child {
+  margin-bottom: 0;
+}
+
+.benefit-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #ffd700;
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+}
+
+.benefit-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #ccc;
+  font-size: 1.07rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-header {
+    flex-direction: column;
+    gap: 18px;
+    padding: 32px 20px 0 20px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .crypto-table-container {
+    max-width: 98vw;
+    padding: 18px 0 0 0;
+  }
+  .crypto-table th, .crypto-table td {
+    padding: 12px 6px;
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1, .features-content h2 {
+    font-size: 1.3rem;
+  }
+  .main-header {
+    padding: 18px 8px 0 8px;
+  }
+  .footer-columns {
+    gap: 18px;
+  }
+  .crypto-hero h1 {
+    font-size: 1.2rem;
+  }
+  .crypto-table th, .crypto-table td {
+    font-size: 0.92rem;
+    padding: 8px 2px;
+  }
+}
+@media (max-width: 700px) {
+  .learn-hero-content h1 {
+    font-size: 1.4rem;
+  }
+  .learn-section-header h2 {
+    font-size: 1.1rem;
+  }
+  .learn-faq-list {
+    padding: 0 8px;
+  }
+}
+@media (max-width: 600px) {
+  .register-card {
+    max-width: 98vw;
+    padding: 18px 4vw 10px 4vw;
+  }
+}
+
