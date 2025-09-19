@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       // Add further validation or submission logic here
       alert('Registration successful!');
-      window.location.href = 'home.html';
+      window.location.href = 'index.html';
     });
   }
 });
+
