@@ -279,14 +279,14 @@ a {
 }
 
 /* Get Started button */
-.home-get-started-btn {
+.index-get-started-btn {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
 }
 
-/* --- Home Features Section Custom Styles (from inline HTML) --- */
-.features-content.home-features-content {
+/* --- index Features Section Custom Styles (from inline HTML) --- */
+.features-content.index-features-content {
   align-items: center;
   text-align: center;
   gap: 18px;
@@ -311,7 +311,7 @@ a {
   margin-bottom: 28px;
 }
 
-.btn.gold-btn.home-get-started-btn {
+.btn.gold-btn.index-get-started-btn {
   background: linear-gradient(90deg,#ffd700 0%,#bfa100 100%);
   color: #181818;
   padding: 14px 38px;
@@ -1031,5 +1031,6 @@ footer {
     padding: 18px 4vw 10px 4vw;
   }
 }
+
 
 
