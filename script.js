@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="main-header">
-    <a href="home.html" class="logo gold logo-bold">CRYPITO</a>
+    <a href="index.html" class="logo gold logo-bold">CRYPITO</a>
     <nav>
       <ul>
         <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
@@ -27,7 +27,7 @@
 
   <section class="hero hero-full">
     <div class="hex-bg"></div>
-    <a href="home.html" class="back-arrow" aria-label="Back to Home">&#8592;</a>
+    <a href="index.html" class="back-arrow" aria-label="Back to Home">&#8592;</a>
     <div class="hero-content hero-content-no-margin">
       <h1 class="register-title-main">Welcome Back</h1>
       <div class="register-card">
@@ -87,4 +87,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
