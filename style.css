@@ -26,7 +26,7 @@ a {
   background: rgba(0, 0, 0, 0.88);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-home: 100;
 }
 
 .logo {
@@ -88,7 +88,7 @@ a {
   inset: 0;
   background: url('pattern.jpg');
   opacity: 0.25;
-  z-index: 1;
+  z-home: 1;
   background-size: 1400px 800px;
   background-position: center;
   background-repeat: repeat;
@@ -96,7 +96,7 @@ a {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-home: 2;
   text-align: center;
 }
 
@@ -183,7 +183,7 @@ a {
   inset: 0;
   background: url('crypto.png');
   opacity: 0.25;
-  z-index: 1;
+  z-home: 1;
   background-size: 1400px 800px;
   background-position: center;
   background-repeat: repeat;
@@ -194,7 +194,7 @@ a {
   inset: 0;
   background: url('pattern.jpg');
   opacity: 0.25;
-  z-index: 1;
+  z-home: 1;
   background-size: 1400px 800px;
   background-position: center;
   background-repeat: repeat;
@@ -205,7 +205,7 @@ a {
   inset: 0;
   background: url('crypto.png');
   opacity: 0.25;
-  z-index: 1;
+  z-home: 1;
   background-size: 1400px 800px;
   background-position: center;
   background-repeat: repeat;
@@ -279,19 +279,19 @@ a {
 }
 
 /* Get Started button */
-.index-get-started-btn {
+.home-get-started-btn {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
 }
 
-/* --- index Features Section Custom Styles (from inline HTML) --- */
-.features-content.index-features-content {
+/* --- home Features Section Custom Styles (from inline HTML) --- */
+.features-content.home-features-content {
   align-items: center;
   text-align: center;
   gap: 18px;
   position: relative;
-  z-index: 2;
+  z-home: 2;
 }
 
 .features-title-main {
@@ -311,7 +311,7 @@ a {
   margin-bottom: 28px;
 }
 
-.btn.gold-btn.index-get-started-btn {
+.btn.gold-btn.home-get-started-btn {
   background: linear-gradient(90deg,#ffd700 0%,#bfa100 100%);
   color: #181818;
   padding: 14px 38px;
@@ -393,7 +393,7 @@ footer {
 
 .learn-hero-content {
   position: relative;
-  z-index: 2;
+  z-home: 2;
   text-align: left;
   align-items: flex-start;
   width: 100%;
@@ -664,7 +664,7 @@ footer {
 }
 .crypto-hero .hero-content {
   position: relative;
-  z-index: 2;
+  z-home: 2;
   text-align: center;
 }
 .crypto-hero .hero-label {
@@ -795,7 +795,7 @@ footer {
   font-size: 2.2rem;
   letter-spacing: 1px;
   text-align: center;
-  z-index: 2;
+  z-home: 2;
   position: relative;
   padding : 0 100px;
 }
@@ -810,7 +810,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
+  z-home: 2;
 }
 
 .register-title {
@@ -903,7 +903,7 @@ footer {
   font-size: 2.1rem;
   color: #ffd700;
   text-decoration: none;
-  z-index: 10;
+  z-home: 10;
   font-weight: 700;
   transition: color 0.2s;
   background: none;
@@ -1031,6 +1031,7 @@ footer {
     padding: 18px 4vw 10px 4vw;
   }
 }
+
 
 
 
